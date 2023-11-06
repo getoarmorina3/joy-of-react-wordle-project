@@ -16,7 +16,6 @@ function Game() {
   const [gameStatus, setGameStatus] = React.useState("running");
   const [guesses, setGuesses] = React.useState([]);
   const [answer, setAnswer] = React.useState(() => sample(WORDS));
-  console.info({ answer });
 
   function handleSubmitGuess(tentativeGuess) {
     const nextGuesses = [...guesses, tentativeGuess];
